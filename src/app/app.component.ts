@@ -15,4 +15,6 @@ export class AppComponent {
   content = '待辦事項 A';
 
   hasFinished = false;
+
+  finishDate?: Date;
 }
