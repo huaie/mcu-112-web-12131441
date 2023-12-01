@@ -1,6 +1,5 @@
-ngoutput
-i
-mport { DatePipe } from '@angular/common';
+Output
+import { DatePipe } from '@angular/common';
 import {
   Component,
   EventEmitter,
@@ -10,6 +9,7 @@ import {
 } from '@angular/core';
 
 import { Todo } from '../model/todo';
+import { DatePipe } from '@angular/common'
 
 @Component({
   selector: 'app-todo',
