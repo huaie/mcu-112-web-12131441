@@ -1,4 +1,3 @@
-Output
 import { DatePipe } from '@angular/common';
 import {
   Component,
@@ -9,7 +8,6 @@ import {
 } from '@angular/core';
 
 import { Todo } from '../model/todo';
-import { DatePipe } from '@angular/common'
 
 @Component({
   selector: 'app-todo',
@@ -21,6 +19,9 @@ import { DatePipe } from '@angular/common'
 export class TodoComponent {
   @Input({ required: true })
   task!: Todo;
+
+  @Output()
+  remove = new EventEmitter<void>();
 
 @Output()
 readonly stateChange = new EventEmitter<boolean>();
