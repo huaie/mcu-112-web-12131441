@@ -1,4 +1,6 @@
-import { DatePipe } from '@angular/common';
+ngoutput
+i
+mport { DatePipe } from '@angular/common';
 import {
   Component,
   EventEmitter,
