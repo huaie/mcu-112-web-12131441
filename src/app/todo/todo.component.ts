@@ -24,6 +24,9 @@ export class TodoComponent {
   @Output()
   remove = new EventEmitter<void>();
 
+  @Output()
+  view = new EventEmitter<void>();
+  
 @Output()
 readonly stateChange = new EventEmitter<boolean>();
 
