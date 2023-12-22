@@ -1,11 +1,18 @@
 export class Todo {
-    constructor(
-        public id: number,
-        public content: string,
-        public hasFinished: boolean = false
-    ){}
+    constructor(initData?: Partial<Todo>) {
+        Object.assign(this, initData);
+        if (this.hasFinished === undefined) {
+          this.hasFinished = false;
+        }
+      }
+    
+      id!: number;
+    
+      content!: string;
+    
+      hasFinished!: boolean;
 
-    finishDate?: Date;
+      finishDate?: Date;
 
     setFinished(finishDate: Date):void{
         this.hasFinished = true;
