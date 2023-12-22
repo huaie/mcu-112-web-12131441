@@ -11,7 +11,6 @@ import { Observable } from 'rxjs';
 
 import { Todo } from '../model/todo';
 import { TaskService } from '../services/task.service';
-import { TaskRemoteService } from '../services/task-remote.service';
 
 @Component({
   selector: 'app-todo-detail',
@@ -26,7 +25,7 @@ export class TodoDetailComponent implements OnChanges {
 
   task$!: Observable<Todo | undefined>;
 
-  private readonly taskService = inject(TaskRemoteService);
+  private readonly taskService = inject(TaskService);
 
   @HostBinding('class')
   class = 'todo-detail';
