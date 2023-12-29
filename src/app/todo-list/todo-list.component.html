@@ -10,7 +10,7 @@
     (view)="view.emit(task.id)"
     (stateChange)="stateChange.emit({ task: task, state: $event })"
   ></app-todo>
-</ng-container>
+</ng-template>
 
 <ng-template #dataEmpty>
   <div class="empty">沒有待辦事項</div>
